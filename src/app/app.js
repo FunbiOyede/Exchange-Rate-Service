@@ -3,7 +3,6 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const {PORT} =require('./config/config');
 const http = require('http');
-const routes = require('../app/routes/routes');
 const router = require("../app/routes/routes");
 
 
