@@ -58,6 +58,20 @@ class Client{
       
     }
 
+    async fetchCurrencies(){
+        let url = "currencies.json";
+        let config = {
+            method:"GET"
+        }
+         try {
+             const currencies = await this.request(url,config);
+             return currencies
+         } catch (error) {
+             console.log(error)
+             Promise.reject(error.message)
+         }
+    }
+
     
 }
 

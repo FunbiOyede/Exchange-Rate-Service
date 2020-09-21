@@ -17,8 +17,9 @@ class App{
     this.app.use(cors());
     this.app.use(express.urlencoded({ extended: true }));
     this.app.use(router)
+
     this.app.get("/status", (req, res) => {
-        res.json("Exchange Rate")
+        res.json("Exchange Rate Ready")
       });
       
   
